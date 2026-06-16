@@ -68,7 +68,7 @@ title: "Alf's Links"
 avatar: "./images/profile.jpeg"
 name: "@alfielionel"
 tagline: >-
-    16 y/o. Chair, Executive Director, Content Strategist.
+    Chair, Executive Director, Content Strategist.
 
 # -----------------------------------------------------------------------------
 # Links
@@ -87,14 +87,6 @@ links:
       alt: "Alf's Cal.eu."
       title: "Get in touch."
       target: "_blank"
-  - link:
-      icon: "fa-brands fa-youtube"
-      text: "{{ vars.YouTubeChannelLatestVideoPlugin['@plutato'].title }}"
-      url: "{{ vars.YouTubeChannelLatestVideoPlugin['@plutato'].url }}"
-      alt: "Latest YouTube video"
-      title: "Latest YouTube video"
-      target: "_blank"
-      latest: true
 
 # -----------------------------------------------------------------------------
 # Social media buttons
