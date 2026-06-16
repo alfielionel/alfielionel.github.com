@@ -9,7 +9,7 @@
 # Theme — directory under ./themes/. Built-ins:
 #   default | minimal-mono | editorial-serif | neo-brutalism
 #   glassmorphism | terminal-retro | paper-card | newsprint
-theme: glassmorphism
+theme: neo-brutalism
 
 # HTML <html lang> attribute
 lang: "en"
@@ -45,33 +45,16 @@ plugins:
       - ZhgChgLi/ZMediumToMarkdown
       - ZhgChgLi/linkyee
 
-  # Latest commit (sha / date / message) for a repo. Use as:
-  #   {{ vars.GithubLastCommitPlugin['owner/repo'].date }}
-  #   {{ vars.GithubLastCommitPlugin['owner/repo'].sha }}
-  - GithubLastCommitPlugin:
-      - ZhgChgLi/linkyee
-
   # Public profile stats (followers / following / public_repos). Use as:
   #   {{ vars.GithubProfilePlugin['user'].followers }}
   - GithubProfilePlugin:
-      - ZhgChgLi
-
-  # Latest items from any RSS / Atom feed (Medium, blogs, YouTube channels,
-  # podcasts...). Returns an array of { title, url, date } per feed URL.
-  # Iterate inside theme index.html with {% for item in vars.RSSFeedPlugin[...] %}.
-  - RSSFeedPlugin:
-      - https://en.zhgchg.li/feed.xml
-
-  # Days until / since a target date. Hash-style — labels become keys.
-  # Use as: {{ vars.CountdownPlugin.label.days }}, .target, .passed
-  - CountdownPlugin:
-      linkyee_release: "2024-12-21"
+      - AlfieLionel
 
   # Latest video for one or more YouTube channels (channel id, @handle, or URL).
   # Use as: {{ vars.YouTubeChannelLatestVideoPlugin['@handle'].title }}
   #         {{ vars.YouTubeChannelLatestVideoPlugin['@handle'].url }}
   - YouTubeChannelLatestVideoPlugin:
-      - "@zhgchgli"
+      - "@plutato"
 
 # -----------------------------------------------------------------------------
 # Tracking
@@ -81,12 +64,11 @@ google_analytics_id:
 # -----------------------------------------------------------------------------
 # Profile header
 # -----------------------------------------------------------------------------
-title: "ZhgChgLi's Links"
+title: "Alf's Links"
 avatar: "./images/profile.jpeg"
-name: "@zhgchgli"
+name: "@alfielionel"
 tagline: >-
-    An iOS, web, and automation developer from Taiwan 🇹🇼 who also loves sharing, traveling, and writing.
-    Followed by {{ vars.GithubProfilePlugin['ZhgChgLi'].followers }} on GitHub across {{ vars.GithubProfilePlugin['ZhgChgLi'].repos }} public repos.
+    16 y/o. Chair, Executive Director, Content Strategist.
 
 # -----------------------------------------------------------------------------
 # Links
